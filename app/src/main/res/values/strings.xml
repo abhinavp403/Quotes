@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quotes</string>
+    <string name="philosophers">Philosophers</string>
+    <string name="spiritual_leaders">Spiritual Leaders</string>
+    <string name="scientists">Scientists</string>
+    <string name="entrepreneurs">Entrepreneurs</string>
+    <string name="politicians">Politicians</string>
+    <string name="actors">Actors</string>
+    <string name="musicians">Musicians</string>
+    <string name="read_quotes">Read Quotes</string>
+    <string name="get_inspired">Get Inspired</string>
+</resources>
