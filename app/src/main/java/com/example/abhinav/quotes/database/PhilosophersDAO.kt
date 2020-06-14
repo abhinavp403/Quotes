@@ -1,15 +1,16 @@
 package com.example.abhinav.quotes.database
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 
 @Dao
-interface philosphersDAO
+interface PhilosphersDAO
 {
     @Insert
-    fun saveQuotes(q: philosophers)
+    fun insert(q: Philosophers)
 
     @Query(value = "Select * from philosopher_quotes_table")
-    fun getAllQuotes() : List<philosophers>
+    fun getAllQuotes() : LiveData<List<Philosophers>>
 }
