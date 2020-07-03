@@ -8,7 +8,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.example.abhinav.quotes"
+        applicationId "com.dev.abhinav.quotes"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -24,6 +24,18 @@ android {
         }
     }
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -47,7 +59,6 @@ dependencies {
 
     //for reading csv files
     implementation 'com.opencsv:opencsv:5.1'
-    implementation 'org.apache.commons:commons-csv:1.8'
 
     // Material design
     implementation "com.google.android.material:material:1.1.0"
@@ -57,13 +68,11 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0"
 
-    // Lifecycle components
-    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    kapt "androidx.lifecycle:lifecycle-compiler:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-
     //ReactiveX
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.17'
+
+    //Color Picker Dialog
+    implementation 'com.github.QuadFlask:colorpicker:0.0.15'
 }

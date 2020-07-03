@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quotes</string>
+    <string name="app_name">Category Quotes</string>
     <string name="philosophers">Philosophers</string>
     <string name="spiritual_leaders">Spiritual Leaders</string>
     <string name="scientists">Scientists</string>
