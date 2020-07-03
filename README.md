@@ -10,3 +10,5 @@ Coding Aspects used:
 1) Sliding Fragment
 2) Room Database
 3) Shared Preference
+4) ColorPicker Palette
+5) Intent for sharing images
